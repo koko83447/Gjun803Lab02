@@ -10,6 +10,24 @@
 
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        android:textSize="16sp"/>
+
+
+    <CheckBox
+        android:id="@+id/toppings_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="泡菜"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:onClick="myClick"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quantity"
@@ -22,11 +40,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_dec"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="decrement"
+            android:onClick="myClick"
             android:text="-" />
 
         <TextView
@@ -42,11 +60,11 @@
             android:layout_marginRight="8dp"/>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_inc"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="increment"
+            android:onClick="myClick"
             android:text="+" />
 
     </LinearLayout>
@@ -64,14 +82,16 @@
         android:layout_height="wrap_content"
         android:text="NT$0"
         android:textColor="@android:color/black"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
 
     <Button
+        android:id="@+id/btn_order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Order"
         android:textAllCaps="true"
-        android:onClick="submitOrder"/>
+        android:onClick="myClick"/>
 
 
 </LinearLayout>
